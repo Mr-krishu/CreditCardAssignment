@@ -1,0 +1,262 @@
+.cardContainer {
+  position: relative;
+  margin-bottom: -60px;
+}
+.cardSubContainer {
+
+  width: 100%;
+}
+.cardContainerContent {
+  width: 330px;
+  height:220px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: auto;
+  -webkit-box-shadow: 0px 16px 50px 1px rgba(0,0,0,0.45); 
+  box-shadow: 0px 16px 50px 1px rgba(0,0,0,0.45);
+}
+.cardheadercontainer,
+.cardBottomcontainer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+.cardBottomcontainer {
+  padding-bottom: 10px;
+}
+.cardNumber {
+  margin-left:20px;
+  color: white;
+  margin: 11% 0px 50px 10%;
+  font-size: 25px;
+  font-weight:600;
+}
+
+.cardImg {
+  width: 400px;
+  border-radius: 10px;
+}
+.cardType img {
+  margin-top:-20px;
+  width: 50px;
+  object-fit: cover;
+  margin: 20px 20px 0 0;
+}
+.cardChip img {
+  width: 45px;
+  height:35px;
+  margin: 10px 0px 0 20px;
+}
+.cardHolderName {
+  margin-top:-20px;
+  margin-left: 20px;
+}
+.cardHoldName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 120px;
+}
+.cardExpires {
+  margin-top:-20px;
+  margin-left: 30%;
+}
+.cardHead {
+  color: rgb(145, 144, 144);
+  font-size:10px;
+  font-weight: 800;
+}
+
+.formSubContainer {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 16px 50px 1px rgba(0,0,0,0.45); 
+  box-shadow: 0px 16px 50px 1px rgba(0,0,0,0.45);
+  width: 400px;
+  height:300px;
+  margin: auto;
+  padding: 20px;
+  padding-top: 95px;
+}
+.formContainer {
+  position: relative;
+  display: block;
+  padding-top: 40px;
+  height: 94vh;
+  overflow: hidden;
+}
+.customField {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.customField > div {
+  width: 100%;
+}
+.formheader {
+  color: rgb(111, 106, 106);
+  font-size:10px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.field {
+  height: 35px;
+  width: 100%;
+}
+.field > div {
+  height: 35px;
+}
+.datefieldContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select {
+  width: 120px;
+  height: 35px;
+}
+
+.select > div {
+  padding: 0;
+}
+
+.datefield > div {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.submitButton {
+  background-color: blue !important;
+  color: white !important;
+  width: 100%;
+  margin: 30px 0 !important;
+  font-weight: bolder !important;
+}
+.cvvfield {
+  width: 70px;
+}
+
+.cvvclass {
+  width: 62px;
+  outline: none;
+  border: none;
+}
+
+.flip-card-front,
+.flip-card-back {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  margin-top:-100px;
+  margin-bottom:-190px;
+  color: white;
+  transform: rotateY(180deg) translateZ(1px);
+  position: absolute;
+  top:0;
+  z-index: 0;
+  width: 100%;
+}
+.cardTypeCVV {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.cardTypeCVV img {
+  margin-right:-15px;
+  padding:25px;
+  width: 60px;
+  object-fit: contain;
+}
+.cardNumberCVV {
+  width:90%;
+  height:30px;
+  margin-left:15px;
+  background-color: white;
+  color: black;
+  text-align: right;
+  border-radius:5px;
+
+}
+.cardNumberCVV div{
+  margin-right:15px;
+  padding:5px;
+}
+ 
+.cvvcvv {
+  padding:5px;
+  margin-left:270px;
+  font-size:10px;
+  font-weight: 800;
+  color:rgb(121, 116, 116);
+}
+.activeCard {
+  border:none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+option {
+  text-align: center;
+}
+
+.select > div,
+.cvvclass {
+  padding-left: 10px;
+}
+
+ul {
+  height: 180px;
+}
+
+.error{
+    color: red;
+    margin-top:-7px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 780px) {
+  .cardContainerContent {
+    width: 80%;
+  }
+  .formSubContainer {
+    width: 85%;
+  }
+
+  .cardNumber {
+    font-size: 22px;
+  }
+  .cardHolderName {
+    margin-left: 5px;
+  }
+  .cardHead {
+    font-size: 13px;
+  }
+  .cardChip img {
+    margin-left: 5px;
+  }
+  .cardType img {
+    margin-right: 5px;
+  }
+  .select {
+    width: 90px;
+  }
+}
+.blacks{
+margin-top:80px;
+  padding-top:50px;
+
+  
+  }
+  .blackstrip{
+      background-color: black;
+      width:100%;
+      height:40px;
+    
+  }
