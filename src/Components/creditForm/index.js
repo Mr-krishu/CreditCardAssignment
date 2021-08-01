@@ -40,7 +40,7 @@ export const CreditForm = () => {
   useEffect(() => {
     let currentYear = new Date().getFullYear();
     let temArray = [];
-    for (let i = 1950; i <= currentYear; i++) {
+    for (let i = 1950; i <= currentYear+50; i++) {
       console.log(i);
       temArray.push(i.toString());
       setYearArray(temArray);
